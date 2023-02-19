@@ -10,7 +10,7 @@ text_area.pack()
 main_menu = tkinter.Menu(window)
 
 def NewFile():
-    print("Crie um novo arquivo")
+    text_area.delete(1.0, "end")
 
 def Save():
     print("Arquivo salvo")
