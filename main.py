@@ -13,7 +13,10 @@ def NewFile():
     text_area.delete(1.0, "end")
 
 def Save():
-    print("Arquivo salvo")
+    container = text_area.get(1.0, "end")
+    file = open("notepad.txt", "w")
+    file.write(container)
+    file.close()
 
 def Save_as():
     print("Salvar como...")
